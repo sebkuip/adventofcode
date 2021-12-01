@@ -1,10 +1,8 @@
 with open('input.txt', 'r') as f:
-    data = f.readlines()
-
-    for i, line in enumerate(data):
-        data[i] = int(line)
+    data = [int(line.strip()) for line in f]
 
 counter = 0
+
 
 for i in range(len(data)):
     if i == len(data) - 3:
